@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 1939774438}
   - component: {fileID: 1939774439}
   m_Layer: 0
-  m_Name: Sunflower_0
+  m_Name: Plant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,8 +279,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: -863806129, guid: 6eb5ac6e0b6fab04f9f4aa85814c070a, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -939907231, guid: 6eb5ac6e0b6fab04f9f4aa85814c070a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -301,6 +301,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2056730501}
   - component: {fileID: 2056730500}
+  - component: {fileID: 2056730502}
+  - component: {fileID: 2056730503}
   m_Layer: 0
   m_Name: Plot
   m_TagString: Untagged
@@ -376,3 +378,46 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2056730502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056730499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1cdf42fbe34210428adec0b9d5da54c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!60 &2056730503
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056730499}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.3333333, y: 2.4747474}
+    newSize: {x: 3.3333333, y: 2.4747474}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 1.25}
+      - {x: 1.66, y: 0.4}
+      - {x: 1.66, y: -0.4}
+      - {x: 0, y: -1.25}
+      - {x: -1.66, y: -0.4}
+      - {x: -1.66, y: 0.4}
