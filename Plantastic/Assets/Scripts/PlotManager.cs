@@ -19,6 +19,8 @@ public class PlotManager : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Clicked");
+        #if true
+            Debug
+        #endif.Log("Clicked");
     }
 }
